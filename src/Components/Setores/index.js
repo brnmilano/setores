@@ -4,6 +4,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
+import Button from "../Button";
 import Heading from "../Heading";
 import styles from "./styles.module.scss";
 
@@ -25,100 +26,102 @@ export default function Setores() {
           </Typography>
         </AccordionSummary>
 
-        <AccordionDetails>
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+        <AccordionDetails classes={{ root: styles.AccordionDetails }}>
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 1
-          </Typography>
+            Cargo 1
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 2
-          </Typography>
+            Cargo 2
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 3
-          </Typography>
+            Cargo 3
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 1
-          </Typography>
+            Cargo 1
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 2
-          </Typography>
+            Cargo 2
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 3
-          </Typography>
+            Cargo 3
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 1
-          </Typography>
+            Cargo 1
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 2
-          </Typography>
+            Cargo 2
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 3
-          </Typography>
+            Cargo 3
+          </Button>
+
+          <Box display="flex" gap={1.25} width="100%">
+            <Button
+              backgroundColor="#c4c4c4"
+              textTransform="uppercase"
+              padding="5px 15px"
+              width="100%"
+            >
+              Editar
+            </Button>
+
+            <Button
+              backgroundColor="#c4c4c4"
+              textTransform="uppercase"
+              padding="5px 15px"
+              width="100%"
+            >
+              Excluir
+            </Button>
+          </Box>
         </AccordionDetails>
       </Accordion>
 
-      <Accordion sx={{ backgroundColor: "#a09f9f" }}>
+      <Accordion classes={{ root: styles.Accordion }} sx={{ backgroundColor: "#a09f9f" }}>
         <AccordionSummary
           expandIcon={
             <ArrowDropDownCircleRoundedIcon sx={{ color: "#000000" }} />
@@ -131,96 +134,98 @@ export default function Setores() {
           </Typography>
         </AccordionSummary>
 
-        <AccordionDetails>
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+        <AccordionDetails classes={{ root: styles.AccordionDetails }}>
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 1
-          </Typography>
+            Cargo 1
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 2
-          </Typography>
+            Cargo 2
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 3
-          </Typography>
+            Cargo 3
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 1
-          </Typography>
+            Cargo 1
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 2
-          </Typography>
+            Cargo 2
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 3
-          </Typography>
+            Cargo 3
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 1
-          </Typography>
+            Cargo 1
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 2
-          </Typography>
+            Cargo 2
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 3
-          </Typography>
+            Cargo 3
+          </Button>
+
+          <Box display="flex" gap={1.25} width="100%">
+            <Button
+              backgroundColor="#c4c4c4"
+              textTransform="uppercase"
+              padding="5px 15px"
+              width="100%"
+            >
+              Editar
+            </Button>
+
+            <Button
+              backgroundColor="#c4c4c4"
+              textTransform="uppercase"
+              padding="5px 15px"
+              width="100%"
+            >
+              Excluir
+            </Button>
+          </Box>
         </AccordionDetails>
       </Accordion>
 
@@ -237,96 +242,98 @@ export default function Setores() {
           </Typography>
         </AccordionSummary>
 
-        <AccordionDetails>
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+        <AccordionDetails classes={{ root: styles.AccordionDetails }}>
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 1
-          </Typography>
+            Cargo 1
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 2
-          </Typography>
+            Cargo 2
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 3
-          </Typography>
+            Cargo 3
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 1
-          </Typography>
+            Cargo 1
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 2
-          </Typography>
+            Cargo 2
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 3
-          </Typography>
+            Cargo 3
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 1
-          </Typography>
+            Cargo 1
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 2
-          </Typography>
+            Cargo 2
+          </Button>
 
-          <Typography
-            sx={{
-              backgroundColor: "#c4c4c4",
-              padding: 1,
-              textTransform: "uppercase",
-            }}
+          <Button
+            backgroundColor="#c4c4c4"
+            textTransform="uppercase"
+            padding="5px 15px"
           >
-            cargo 3
-          </Typography>
+            Cargo 3
+          </Button>
+
+          <Box display="flex" gap={1.25} width="100%">
+            <Button
+              backgroundColor="#c4c4c4"
+              textTransform="uppercase"
+              padding="5px 15px"
+              width="100%"
+            >
+              Editar
+            </Button>
+
+            <Button
+              backgroundColor="#c4c4c4"
+              textTransform="uppercase"
+              padding="5px 15px"
+              width="100%"
+            >
+              Excluir
+            </Button>
+          </Box>
         </AccordionDetails>
       </Accordion>
     </Box>

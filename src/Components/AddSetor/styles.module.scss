@@ -1,4 +1,71 @@
 .addSetorWrapper {
     background-color: #c4c4c4;
     width: 100%;
+    padding: 25px;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .cargosWrapper {
+        display: flex;
+        gap: 20px;
+
+        .textFieldRoot {
+            width: 100%;
+            background-color: #817f7f;
+            border-radius: 10px;
+
+            input {
+                &::placeholder {
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+            }
+
+            fieldset {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .buttonSave {
+        position: absolute;
+        bottom: 40px;
+        right: 45px;
+    }
+
+    @media screen and (max-width: 960px) {
+        .buttonSave {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            position: relative;
+            bottom: unset;
+            right: unset;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .cargosWrapper {
+            flex-direction: column;
+
+            button {
+                max-width: 200px;
+                margin: 0 auto;
+                height: 50px;
+            }
+        }
+
+        .buttonSave {
+            justify-content: center;
+
+            button {
+                max-width: 200px;
+                margin: 0 auto;
+                height: 50px;
+                line-height: 12px;
+            }
+        }
+    }
 }
