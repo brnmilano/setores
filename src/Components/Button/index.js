@@ -2,12 +2,14 @@ import styles from "./styles.module.scss";
 
 export default function Button({
   children,
-  backgroundColor = "#FFFFFF",
+  backgroundColor,
   color = "#000000",
   borderRadius,
   padding,
+  width = "unset",
   fontSize,
   fontWeight = "bold",
+  textTransform,
   onClick,
   ...rest
 }) {
@@ -22,6 +24,8 @@ export default function Button({
         fontSize,
         fontWeight,
         color,
+        width,
+        textTransform,
       }}
       onClick={onClick}
     >
