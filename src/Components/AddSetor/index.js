@@ -1,9 +1,12 @@
-import { Box, TextField } from "@mui/material";
+import { Box } from "@mui/material";
 import Button from "../Button";
 import Heading from "../Heading";
+import TextField from "../TextField/TextField";
 import styles from "./styles.module.scss";
 
 export default function AddSetor() {
+
+
   return (
     <Box className={styles.addSetorWrapper}>
       <Heading>Adicionar setores</Heading>
@@ -11,7 +14,7 @@ export default function AddSetor() {
       <Box style={{ marginBottom: 20 }}>
         <TextField
           id="outlined-basic"
-          placeholder="Nome:"
+          topLabel="Nome:"
           variant="outlined"
           fullWidth
           classes={{
@@ -23,7 +26,7 @@ export default function AddSetor() {
       <Box className={styles.cargosWrapper}>
         <TextField
           id="outlined-basic"
-          placeholder="Cargo(s):"
+          topLabel="Cargo(s):"
           variant="outlined"
           classes={{
             root: styles.textFieldRoot,
@@ -38,6 +41,7 @@ export default function AddSetor() {
           color="#ffffff"
           fontWeight={500}
           fontSize={12}
+          onClick={}
         >
           Adicionar
         </Button>

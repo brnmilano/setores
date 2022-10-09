@@ -1,0 +1,75 @@
+.root {
+  &.gray {
+    .inputRoot {
+      color: #0280f8;
+
+      &:after,
+      &:before {
+        border-bottom: 1px solid #333333;
+      }
+
+      &:hover {
+        &:after,
+        &:before {
+          border-bottom: 1px solid #333333;
+        }
+      }
+
+      > input {
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-text-fill-color: #0280f8 !important;
+        }
+
+        &::placeholder {
+          color: #aaaaaa;
+        }
+      }
+    }
+
+    .helperTextError {
+      color: #f76140;
+    }
+  }
+
+  .inputRoot {
+    padding: 0 0.5rem;
+    color: #e7e8ed;
+
+    &:after,
+    &:before {
+      border-bottom: 1px solid #a9ccf0;
+    }
+
+    &:hover {
+      &:after,
+      &:before {
+        border-bottom: 1px solid #a9ccf0;
+      }
+    }
+
+    > input {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        transition: background-color 9999s ease-in-out 0s;
+        -webkit-text-fill-color: #e7e8ed !important;
+      }
+
+      &::placeholder {
+        color: #419df5;
+        opacity: 1;
+      }
+    }
+  }
+
+  .helperTextError {
+    position: absolute;
+    top: 100%;
+    color: #e7e8ed;
+    padding-left: 0.5rem;
+  }
+}
