@@ -1,0 +1,19 @@
+{
+  "setores": [
+    {
+      "id": 1,
+      "name": "Setor1",
+      "cargos": ["123", "Recepcionista", "Professor"]
+    },
+    {
+      "id": 2,
+      "name": "Setor2",
+      "cargos": ["Vendedor", "Recepcionista", "Professor"]
+    },
+    {
+      "id": 3,
+      "name": "Setor3",
+      "cargos": ["Vendedor", "Recepcionista", "Professor"]
+    }
+  ]
+}
