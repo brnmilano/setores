@@ -18,7 +18,7 @@ export default function Setores() {
 
   useEffect(() => {
     dispatch(fetchSetores());
-  }, []);
+  }, [dispatch]);
 
   return (
     <Box className={styles.setoresWrapper}>
@@ -39,7 +39,7 @@ export default function Setores() {
             </AccordionSummary>
 
             <AccordionDetails classes={{ root: styles.AccordionDetails }}>
-              {item.cargos.map((cargo, index2) => {
+              {item.cargos?.map((cargo, index2) => {
                 return (
                   <Button
                     backgroundColor="#c4c4c4"

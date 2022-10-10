@@ -9,10 +9,16 @@ export const fetchSetores = createAsyncThunk(
   }
 );
 
-export const postSetores = createAsyncThunk("setores/postSetores", async () => {
-  const response = await axios.post("http://localhost:3001/setores");
-  return response.data;
-});
+export const postSetores = createAsyncThunk(
+  "setores/postSetores",
+  async ({ name, cargos }) => {
+    const response = await axios.post("http://localhost:3001/setores", {
+      name,
+      cargos,
+    });
+    return response.data;
+  }
+);
 
 export const setoresSlice = createSlice({
   name: "setores",

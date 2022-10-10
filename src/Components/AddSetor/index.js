@@ -1,5 +1,7 @@
+import CancelIcon from "@mui/icons-material/Cancel";
 import { Box } from "@mui/material";
 import { useFormik } from "formik";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { postSetores } from "../../Store/setoresSlice";
 import Button from "../Button";
@@ -9,23 +11,36 @@ import styles from "./styles.module.scss";
 
 export default function AddSetor() {
   const dispatch = useDispatch();
+  const [cargo, setCargo] = useState("");
 
   const setoresFormik = useFormik({
     initialValues: {
       name: "",
       cargos: [],
     },
+    onSubmit: (values) => {
+      if (values.name) {
+        dispatch(postSetores(setoresFormik.values));
+        setoresFormik.resetForm();
+      }
+    },
   });
 
-  const addSetor = async () => {
-    dispatch(
-      postSetores({
-        data: setoresFormik.cargos,
-      })
-    );
+  const addCargo = () => {
+    if (cargo) {
+      setoresFormik.setFieldValue("cargos", [
+        ...setoresFormik.values.cargos,
+        cargo,
+      ]);
+      setCargo("");
+    }
   };
+
   return (
-    <Box className={styles.addSetorWrapper}>
+    <form
+      className={styles.addSetorWrapper}
+      onSubmit={setoresFormik.handleSubmit}
+    >
       <Heading>Adicionar setores</Heading>
 
       <Box style={{ marginBottom: 20 }}>
@@ -50,21 +65,33 @@ export default function AddSetor() {
           classes={{
             root: styles.textFieldRoot,
           }}
-          {...setoresFormik.getFieldProps("cargos")}
+          value={cargo}
+          onChange={(event) => setCargo(event.target.value)}
         />
 
         <Button
           backgroundColor="#4A4A4A"
           textTransform="uppercase"
-          padding="5px 35px"
+          padding="19px 35px"
           borderRadius={10}
           color="#ffffff"
           fontWeight={500}
           fontSize={12}
-          onClick={addSetor}
+          onClick={addCargo}
+          type="button"
         >
           Adicionar
         </Button>
+      </Box>
+
+      <Box className={styles.cargoAdd}>
+        {setoresFormik.values.cargos.map((cargo, index) => {
+          return (
+            <Box className={styles.cargo} key={`${cargo} ${index}`}>
+              {cargo} <CancelIcon />
+            </Box>
+          );
+        })}
       </Box>
 
       <Box className={styles.buttonSave}>
@@ -76,10 +103,11 @@ export default function AddSetor() {
           color="#ffffff"
           fontWeight={500}
           fontSize={12}
+          type="submit"
         >
           Salvar
         </Button>
       </Box>
-    </Box>
+    </form>
   );
 }

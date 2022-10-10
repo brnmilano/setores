@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Setor1",
-      "cargos": ["123", "Recepcionista", "Professor"]
+      "cargos": ["Vendedor", "Recepcionista", "Professor"]
     },
     {
       "id": 2,
