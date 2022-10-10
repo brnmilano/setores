@@ -10,8 +10,8 @@
 Instala as dependencias para rodar o projeto.
 
 ```
-    Instalar dependencias:
-    yarn
+Instalar dependencias:
+yarn
 ```
 
 ### Desenvolvimento
